@@ -1,0 +1,69 @@
+// vim: set shiftwidth=2 iskeyword+=\- foldmethod=marker foldlevel=0:
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nanum+Gothic:wght@400;700&family=Quicksand:wght@300;400;500;600&display=swap');
+
+$c-bg: #dfe1e5;
+$c-offblack: #212529;
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  // display: flex;
+  // justify-content: center;
+  &.dark-bg { background-color: $c-offblack; }
+}
+
+
+.navbar {
+  background-color: #ffffff44;
+  transition: .3s;
+  height: 4rem;
+  font-family: 'Quicksand', sans-serif;
+
+  &.scrolled {
+    background-color: $c-offblack;
+  }
+
+  .navbar-brand > span {
+    position: relative;
+    left: 8px;
+    top: 2px;
+    letter-spacing: 2px;
+    opacity: .8;
+    transition: .3s;
+    font-size: 1.5rem;
+
+    &:hover {
+    }
+  }
+
+  .navbar-collapse {
+    padding-left: 10px;
+  }
+
+  &.navbar-expand-sm .nav-link {
+    padding-left: 1rem;
+  }
+}
+
+header {
+  .mast { height: 30rem; }
+
+  .header-svg {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+.bg-gradient-primary-to-secondary {
+  background-image: linear-gradient(135deg, #0061f2, rgba(105, 0, 199, .8));
+  height: 100%;
+}
+
+main {
+  color: white;
+}

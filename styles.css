@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nanum+Gothic:wght@400;700&family=Quicksand:wght@300;400;500;600&display=swap");
+html,
+body {
+  height: 100vh;
+  width: 100vw; }
+
+body.dark-bg {
+  background-color: #212529; }
+
+.navbar {
+  background-color: #ffffff44;
+  transition: .3s;
+  height: 4rem;
+  font-family: 'Quicksand', sans-serif; }
+  .navbar.scrolled {
+    background-color: #212529; }
+  .navbar .navbar-brand > span {
+    position: relative;
+    left: 8px;
+    top: 2px;
+    letter-spacing: 2px;
+    opacity: .8;
+    transition: .3s;
+    font-size: 1.5rem; }
+  .navbar .navbar-collapse {
+    padding-left: 10px; }
+  .navbar.navbar-expand-sm .nav-link {
+    padding-left: 1rem; }
+
+header .mast {
+  height: 30rem; }
+header .header-svg {
+  bottom: 0;
+  position: absolute; }
+
+.bg-gradient-primary-to-secondary {
+  background-image: linear-gradient(135deg, #0061f2, rgba(105, 0, 199, 0.8));
+  height: 100%; }
+
+main {
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */
