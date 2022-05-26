@@ -4,6 +4,9 @@
 
 $c-bg: #dfe1e5;
 $c-offblack: #212529;
+$c-nav-link-scrolled-hover: $c-bg;
+$c-nav-link-unscrolled: rgba(0,0,0,0.8);
+$c-nav-link-unscrolled-hover: #e4ecfccf;
 
 html,
 body {
@@ -18,7 +21,7 @@ body {
 }
 
 
-.navbar {
+.navbar.fixed-top.navbar-expand-sm {
   background-color: #ffffff44;
   transition: .3s;
   height: 4rem;
@@ -26,27 +29,46 @@ body {
 
   &.scrolled {
     background-color: $c-offblack;
+
+    .navbar-brand {
+      color: #fff;
+    }
+
+    a {
+      color: rgba(255,255,255,.55);
+
+      &:hover {
+        color: $c-bg;
+      }
+    }
   }
 
-  .navbar-brand > span {
-    position: relative;
-    left: 8px;
-    top: 2px;
-    letter-spacing: 2px;
-    opacity: .8;
-    transition: .3s;
-    font-size: 1.5rem;
+  a {
+    color: $c-nav-link-unscrolled;
 
     &:hover {
+      color: $c-nav-link-unscrolled-hover;
+    }
+  }
+
+  .navbar-brand {
+    & > span {
+      font-size: 1.5rem;
+      left: 1rem;
+      letter-spacing: 2px;
+      opacity: .8;
+      position: relative;
+      top: 2px;
+      transition: .3s;
     }
   }
 
   .navbar-collapse {
-    padding-left: 10px;
+    padding-left: 1rem;
   }
 
   &.navbar-expand-sm .nav-link {
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

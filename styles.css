@@ -7,25 +7,35 @@ body {
 body.dark-bg {
   background-color: #212529; }
 
-.navbar {
+.navbar.fixed-top.navbar-expand-sm {
   background-color: #ffffff44;
   transition: .3s;
   height: 4rem;
   font-family: 'Quicksand', sans-serif; }
-  .navbar.scrolled {
+  .navbar.fixed-top.navbar-expand-sm.scrolled {
     background-color: #212529; }
-  .navbar .navbar-brand > span {
-    position: relative;
-    left: 8px;
-    top: 2px;
+    .navbar.fixed-top.navbar-expand-sm.scrolled .navbar-brand {
+      color: #fff; }
+    .navbar.fixed-top.navbar-expand-sm.scrolled a {
+      color: rgba(255, 255, 255, 0.55); }
+      .navbar.fixed-top.navbar-expand-sm.scrolled a:hover {
+        color: #dfe1e5; }
+  .navbar.fixed-top.navbar-expand-sm a {
+    color: rgba(0, 0, 0, 0.8); }
+    .navbar.fixed-top.navbar-expand-sm a:hover {
+      color: #e4ecfccf; }
+  .navbar.fixed-top.navbar-expand-sm .navbar-brand > span {
+    font-size: 1.5rem;
+    left: 1rem;
     letter-spacing: 2px;
     opacity: .8;
-    transition: .3s;
-    font-size: 1.5rem; }
-  .navbar .navbar-collapse {
-    padding-left: 10px; }
-  .navbar.navbar-expand-sm .nav-link {
+    position: relative;
+    top: 2px;
+    transition: .3s; }
+  .navbar.fixed-top.navbar-expand-sm .navbar-collapse {
     padding-left: 1rem; }
+  .navbar.fixed-top.navbar-expand-sm.navbar-expand-sm .nav-link {
+    padding-right: 1rem; }
 
 header .mast {
   height: 30rem; }
